@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIDLYPH Creators</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Bungee&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/creators-nav.css">
+    <link rel="stylesheet" href="css/creators.css">
+</head>
+<body>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle d-none">
+
+    <header class="site-header d-flex justify-content-between align-items-center px-3 px-md-4 py-2">
+        <label for="nav-toggle" class="menu-btn mb-0 cursor-pointer" aria-label="Open menu">
+            <span></span><span></span><span></span>
+        </label>
+
+        <a href="index.html" class="logo" aria-label="VIDLYPH home">
+            <img src="images/logo.png" alt="VIDLYPH" class="img-fluid logo-img">
+        </a>
+    </header>
+
+    <nav class="sidebar" aria-label="Main navigation">
+        <div class="sidebar-top d-flex justify-content-between align-items-center p-3">
+            <div class="profile d-flex align-items-center gap-3">
+                <div class="avatar flex-shrink-0" role="img" aria-label="Profile picture placeholder"></div>
+                <div>
+                    <p class="profile-name mb-0 fw-bold">Name</p>
+                    <p class="profile-desc mb-0 text-muted small">Description</p>
+                </div>
+            </div>
+            <label for="nav-toggle" class="close-btn mb-0" aria-label="Close menu">&times;</label>
+        </div>
+
+        <ul class="nav-links list-unstyled p-3">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="creators.html">Creators</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="collaborate.html">Collaborate</a></li>
+        </ul>
+
+        <a href="login.html" class="login btn w-100 text-uppercase fw-bold mt-auto">Login</a>
+    </nav>
+
+    <label for="nav-toggle" class="overlay" aria-hidden="true"></label>
+
+    <main class="container py-4 py-md-5">
+
+        <section class="text-center my-4 my-md-5">
+            <h1 class="page-title text-uppercase mb-4">CREATOR DIRECTORY</h1>
+            
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8 col-xl-7">
+                    <form class="search-container d-flex align-items-center px-3 px-md-4 py-2 rounded-pill">
+                        <svg class="search-icon me-2 me-md-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                        <input type="search" class="form-control bg-transparent border-0 text-white flex-grow-1 shadow-none" placeholder="Search/filter creators">
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-5">
+            <div class="row g-4 justify-content-center">
+                
+                <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                    <div class="card card-custom yellow-green w-100 p-4 border-0 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="card-header-custom d-flex align-items-center gap-3 mb-3">
+                                <img src="images/creators/dane-picture.jpg" class="profile-img rounded-circle flex-shrink-0" alt="Dane Galicia">
+                                <div>
+                                    <h2 class="h5 fw-bold mb-0 text-dark">Dane Galicia</h2>
+                                    <p class="title text-secondary mb-0">Photographer</p>
+                                </div>
+                            </div>
+                            <p class="description mb-0">
+                                Capturing the world from behind the lens has always been my natural habitat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                    <div class="card card-custom white w-100 p-4 border-0 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="card-header-custom d-flex align-items-center gap-3 mb-3">
+                                <img src="images/creators/juno-picture.jpg" class="profile-img rounded-circle flex-shrink-0" alt="Juno Almazan">
+                                <div>
+                                    <h2 class="h5 fw-bold mb-0 text-dark">Juno Almazan</h2>
+                                    <p class="title text-secondary mb-0">Videographer</p>
+                                </div>
+                            </div>
+                            <p class="description mb-0">
+                                The beauty in moments that feel fleeting, capturing the nostalgia within them and preserving them as memories.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                    <div class="card card-custom yellow-green w-100 p-4 border-0 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="card-header-custom d-flex align-items-center gap-3 mb-3">
+                                <img src="images/creators/andre-picture.png" class="profile-img rounded-circle flex-shrink-0" alt="Andre Del Villar">
+                                <div>
+                                    <h2 class="h5 fw-bold mb-0 text-dark">Andre Del Villar</h2>
+                                    <p class="title text-secondary mb-0">Digital Artist</p>
+                                </div>
+                            </div>
+                            <p class="description mb-0">
+                                I focus on bringing stories to life, create digital art, animation, storyboarding, and any creative media to express my feelings.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                    <div class="card card-custom white w-100 p-4 border-0 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="card-header-custom d-flex align-items-center gap-3 mb-3">
+                                <img src="images/creators/andy-picture.png" class="profile-img rounded-circle flex-shrink-0" alt="Andy Evangelista">
+                                <div>
+                                    <h2 class="h5 fw-bold mb-0 text-dark">Andy Evangelista</h2>
+                                    <p class="title text-secondary mb-0">Game Developer</p>
+                                </div>
+                            </div>
+                            <p class="description mb-0">
+                                I dog, dog eats, dog tired. dog take nappies, and dog is the dawg.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="skills-section my-5">
+            <h1 class="page-title text-center text-uppercase mb-4 mb-md-5">CREATORS' SKILLS</h1>
+            
+            <div class="row g-4 align-items-start">
+                
+                <div class="col-12 col-lg-7 col-xl-8">
+                    <div class="table-responsive rounded">
+                        <table class="table table-borderless align-middle text-white mb-0 skills-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="pb-3 text-uppercase">Name</th>
+                                    <th scope="col" class="pb-3 text-uppercase">Speciality</th>
+                                    <th scope="col" class="pb-3 text-uppercase">Available?</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="active-row">
+                                    <td class="fw-medium">Dane Galicia</td>
+                                    <td>Photography</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>Juno Almazan</td>
+                                    <td>Videography</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>Andre Del Villar</td>
+                                    <td>Animation</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>Andy Evangelista</td>
+                                    <td>Game Development</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>Creator 1</td>
+                                    <td>Specialty</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>Creator 1</td>
+                                    <td>Specialty</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>Creator 1</td>
+                                    <td>Specialty</td>
+                                    <td>Yes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-5 col-xl-4 d-flex justify-content-center">
+                    <div class="preview-card w-100 p-4 rounded-4 d-flex flex-column gap-3">
+                        <div class="preview-header d-flex align-items-center gap-3">
+                            <div class="preview-avatar flex-shrink-0">
+                                <img src="images/creators/dane-picture.jpg" class="avatar rounded-circle w-100 h-100 object-fit-cover" alt="Dane Galicia">
+                            </div>
+                            <div class="preview-title">
+                                <h3 class="h5 fw-bold mb-1 text-dark">Dane Galicia</h3>
+                                <p class="text-secondary mb-0">Photographer</p>
+                            </div>
+                        </div>
+                        
+                        <p class="preview-body mb-0">
+                            Capturing the world from behind the lens has always been my natural habitat.
+                        </p>
+
+                        <button class="btn view-profile-btn w-100 rounded-pill font-weight-bold py-2 mt-auto">
+                            View profile
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

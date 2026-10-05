@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VIDLYPH Find Your Creative Partner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Montserrat:wght@800;900&family=Poppins:wght@400;600;700&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home-sections.css">
+  <style>
+    /* home-sections.css sets padding on body, which would push the header in */
+    body { padding: 0; }
+  </style>
+</head>
+<body>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+  <header class="site-header">
+    <label for="nav-toggle" class="menu-btn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </label>
+
+    <a href="index.html" class="logo" aria-label="VIDLYPH home">
+      <img src="images/logo.png" alt="VIDLYPH">
+    </a>
+  </header>
+
+  <nav class="sidebar" aria-label="Main navigation">
+    <div class="sidebar-top">
+      <div class="profile">
+        <div class="avatar" role="img" aria-label="Profile picture placeholder"></div>
+        <div>
+          <p class="profile-name">Name</p>
+          <p class="profile-desc">Description</p>
+        </div>
+      </div>
+      <label for="nav-toggle" class="close-btn" aria-label="Close menu">
+      </label>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="creators.html">Creators</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="collaborate.html">Collaborate</a></li>
+    </ul>
+
+    <a href="login.html" class="login">login</a>
+  </nav>
+
+
+  <label for="nav-toggle" class="overlay" aria-hidden="true"></label>
+
+  <main>
+    <section class="intro">
+      <div class="intro-text">
+        <h1>Find your<br>creative partner</h1>
+        <p>VIDLYPH connects young creators with people who have the skills they need. Browse animators, illustrators, video editors, musicians, and designers, then send a request to start your next project together.</p>
+        <a href="creators.html" class="btn">Explore creators</a>
+      </div>
+
+      <img src="images/art.png" alt="VIDLYPH creative artwork" class="intro-art">
+    </section>
+
+    <!-- Featured creators + creative fields (Juno) -->
+<section class="featured-section">
+      <h2 class="section-title title-white">
+        <i class="fa-regular fa-star star-icon"></i> FEATURED CREATORS
+      </h2>
+
+      <div class="creators-grid">
+        
+        <div class="creator-card" onclick="openProfile('creator1')">
+          <div class="card-bg">
+            <img src="images/home/creator-profile-1.png" alt="Creator 1">
+          </div>
+          <div class="card-content">
+            <h1 class="creator-name"> Andy Evangelista </h1>
+            <p class="creator-bio"> I dog, dog eats, dog tired. dog take nappies, and dog is the dawg. </p>
+            
+            <div class="card-footer">
+              <div class="stats">
+                <img src="images/home/view.png" alt="View">
+                <span><i class="fa-solid fa-user"></i> 100 </span>
+                <img src="images/home/share.png" alt="Share">
+                <span><i class="fa-solid fa-arrow-up-from-bracket"></i> 30 </span>
+              </div>
+              <button class="follow-btn" onclick="toggleFollow(event, this)">Follow</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="creator-card" onclick="openProfile('creator2')">
+          <div class="card-bg">
+            <img src="images/home/creator-profile-2.jpg" alt="Creator 2">
+          </div>
+          <div class="card-content">
+            <h2 class="creator-name"> Dane Galicia </h2>
+            <p class="creator-bio"> Capturing the world from behind the lens has always been my natural habitat. </p>
+            
+            <div class="card-footer">
+              <div class="stats">
+                <img src="images/home/view.png" alt="View">
+                <span><i class="fa-solid fa-user"></i> 100</span>
+                <img src="images/home/share.png" alt="Share">
+                <span><i class="fa-solid fa-arrow-up-from-bracket"></i> 30 </span>
+              </div>
+              <button class="follow-btn" onclick="toggleFollow(event, this)">Follow</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="creator-card" onclick="openProfile('creator3')">
+          <div class="card-bg">
+            <img src="images/home/creator-profile-3.png" alt="Creator 3">
+          </div>
+          <div class="card-content">
+            <h3 class="creator-name"> Andre Del Villar </h3>
+            <p class="creator-bio"> I focus on bringing stories to life, create digital art, animation, storyboarding, and any creative media to express my feelings. </p>
+            
+            <div class="card-footer">
+              <div class="stats">
+                <img src="images/home/view.png" alt="View">
+                <span><i class="fa-solid fa-user"></i> 100 </span>
+                <img src="images/home/share.png" alt="Share">
+                <span><i class="fa-solid fa-arrow-up-from-bracket"></i> 30 </span>
+              </div>
+              <button class="follow-btn" onclick="toggleFollow(event, this)">Follow</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+        <section class="fields-section">
+      <h2 class="section-title title-white">CREATIVE FIELDS</h2>
+
+      <div class="fields-grid">
+        
+        <div class="field-card">
+          <div class="field-default">
+            <img class="field-img" src="images/home/animation.png" alt="Animation">
+            <span class="field-name">ANIMATION</span>
+            <i class="fa-solid fa-film field-icon"></i>
+          </div>
+          <div class="field-overlay">
+            <h4>ANIMATION</h4>
+            <p> 2D/3D character motion, visual effects, keyframing, and interactive storyboards. </p>
+          </div>
+        </div>
+
+        <div class="field-card">
+          <div class="field-default">
+            <img class="field-img" src="images/home/game-development.png" alt="Game Development">
+            <span class="field-name">GAME DEVELOPMENT</span>
+            <i class="fa-solid fa-gamepad field-icon"></i>
+          </div>
+          <div class="field-overlay">
+            <h4> GAME DEVELOPMENT </h4>
+            <p> Unreal Engine & Unity gameplay mechanics, level design, and interactive web tools. </p>
+          </div>
+        </div>
+
+        <div class="field-card">
+          <div class="field-default">
+            <img class="field-img" src="images/home/photography.png" alt="Photography">
+            <span class="field-name"> PHOTOGRAPHY </span>
+            <i class="fa-solid fa-camera field-icon"></i>
+          </div>
+          <div class="field-overlay">
+            <h4> PHOTOGRAPHY </h4>
+            <p> Digital color grading, lighting setups, and high-ressolution showcases. </p>
+          </div>
+        </div>
+
+        <div class="field-card">
+          <div class="field-default">
+            <img class="field-img" src="images/home/video.png" alt="Video">
+            <span class="field-name">VIDEO</span>
+            <i class="fa-solid fa-clapperboard field-icon"></i>
+          </div>
+          <div class="field-overlay">
+            <h4> VIDEO</h4>
+            <p> Short film production, video editing, sound mixing, and live-stream overlays. </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

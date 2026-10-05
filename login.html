@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VIDLYPH Log In</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+  <header class="site-header">
+    <label for="nav-toggle" class="menu-btn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </label>
+
+    <a href="index.html" class="logo" aria-label="VIDLYPH home">
+      <img src="images/logo.png" alt="VIDLYPH">
+    </a>
+  </header>
+
+  <nav class="sidebar" aria-label="Main navigation">
+    <div class="sidebar-top">
+      <div class="profile">
+        <div class="avatar" role="img" aria-label="Profile picture placeholder"></div>
+        <div>
+          <p class="profile-name">Name</p>
+          <p class="profile-desc">Description</p>
+        </div>
+      </div>
+      <label for="nav-toggle" class="close-btn" aria-label="Close menu">
+      </label>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="creators.html">Creators</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="collaborate.html">Collaborate</a></li>
+    </ul>
+
+    <a href="login.html" class="login">login</a>
+  </nav>
+
+
+  <label for="nav-toggle" class="overlay" aria-hidden="true"></label>
+
+  <main class="account-page">
+    <h1>Log In</h1>
+    <p>Welcome back, creator!</p>
+
+    <!-- Demo only: there is no real account system, so the form just goes to the home page -->
+    <form class="account-form" action="index.html">
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" autocomplete="email" required>
+      </div>
+
+      <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" autocomplete="current-password" required>
+      </div>
+
+      <button type="submit" class="btn">Log In</button>
+    </form>
+
+    <a href="index.html" class="back-link">Back to home</a>
+  </main>
+
+</body>
+</html>
